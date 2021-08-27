@@ -1,0 +1,11 @@
+<div class="row d-flex justify-content-center">
+  <div class="my-3">{{alias}}</div>
+  <div class="col-lg-6 d-flex flex-row">
+    <input class="form-control" type="text" placeholder="Enter Value" [(ngModel)]="value">&nbsp;
+    <button class="btn btn-outline-dark" (click)="add()">Add to Counter</button>
+  </div>
+</div>
+
+<div>
+  <button class="btn btn-danger my-3" (click)="changeAlias()">Change Alias</button>
+</div>
