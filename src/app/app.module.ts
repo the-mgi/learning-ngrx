@@ -9,6 +9,7 @@ import {appReducer} from "./store";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HomeComponent} from './home/home.component';
 import {HeaderComponent} from './shared/components/header/header.component';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {HeaderComponent} from './shared/components/header/header.component';
     }),
     FormsModule,
     ReactiveFormsModule,
+    EffectsModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent]

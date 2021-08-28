@@ -23,9 +23,6 @@ export class PostsListComponent implements OnInit {
 
 
   onRemove(postId: string | any) {
-    if (!confirm('Are you sure you want to delete the product: ' + postId)) {
-      return;
-    }
     this.store.dispatch(removePost({postId}));
   }
 }

@@ -9,8 +9,12 @@ const routes: Routes = [
     loadChildren: () => import('./counter/counter.module').then((module) => module.CounterModule)
   },
   {
-    path: 'posts', loadChildren: () => import("./posts/posts.module").then((module) => module.PostsModule)
+    path: 'posts', loadChildren: () => import('./posts/posts.module').then((module) => module.PostsModule)
   },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((module) => module.AuthModule)
+  }
 ];
 
 @NgModule({
